@@ -1,0 +1,20 @@
+<h1>Fish Homepage</h1>
+
+<p>
+  <%= fish.join('').delete("\\") %>
+
+</p>
+
+<p>
+  <a href="/new">New Fish</a>
+</p>
+
+<p>Search for a fish:</p>
+<form action="/search" method="get">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="search_fish">
+    <button>Search</button>
+  </div>
+</form>
+
